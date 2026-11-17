@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Message For You ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1a0010, #500c30, #200018);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.heart {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #ffb6d5;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+}
+
+button {
+    background: #e84383;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6b9d;
+}
+
+#error {
+    color: #ff9ebc;
+    margin-top: 10px;
+}
+
+#message {
+    display: none;
+    text-align: left;
+    line-height: 1.9;
+    font-size: 15px;
+    margin-top: 25px;
+    white-space: pre-line;
+}
+
+#message h2 {
+    text-align: center;
+    color: #ffb6d5;
+    margin-bottom: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <div id="login">
+        <h1>A Message For You</h1>
+        <p>Someone has something to tell you...</p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+        >
+
+        <button onclick="checkPassword()">
+            Open My Message ❤️
+        </button>
+
+        <p id="error"></p>
+    </div>
+
+    <div id="message">
+
+        <h2>Dear Sayang ❤️</h2>
+
+        sayang,if I did something wrong, please just tell me Don't keep treating me like this because it really hurts why did you suddenly disappear without saying anything? I've messaged you on all your social media accounts,but you haven't replied to any of them Did I do something wrong? If I did,please tell me instead of leaving me wondering what happened from the beginning, we promised to always be honest with each other,didn't we? If you're getting bored of me,if you don't feel the same way anymore, or if you simply don't want this anymore, please just tell me I'd rather hear the truth, even if it hurts,than be left waiting without knowing where I stand
+
+        I'm tired,sayang I'm tired of waiting for your replies,overthinking everything, and crying just because I'm hoping to receive even one message from you I even decided to use a different account just so I could reach you and send you a message,but why do I still have to wait without getting any response?please don't keep ignoring me like this I have feelings too I'm here constantly thinking about you,wondering if you're okay,wondering why you suddenly disappeared,why there's no news from you, and why you can't even send me a single message I'm not asking you to be available every second of the day I just want communication, honesty, and reassurance If you're busy, just tell me If something is bothering you,you can talk to me If your feelings have changed, please be honest with me I'm still trying to understand you, but I hope you can understand my feelings too please don't make me keep crying and blaming myself when I don't even know what happened I just want us to respect each other,communicate honestly, and never disappear without an explanation please reply to my messages,sayang I just want to know what's happening between us I deserve an explanation too,not just silence and uncertainty
+
+        <p style="text-align:center; color:#ffb6d5; margin-top:25px;">
+            ❤️ I hope you understand my feelings. ❤️
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+function checkPassword() {
+
+    const password = document.getElementById("password").value;
+
+    if (password === "1111") {
+
+        document.getElementById("login").style.display = "none";
+
+        document.getElementById("message").style.display = "block";
+
+    } else {
+
+        document.getElementById("error").innerText =
+        "Wrong password! Please try again ❤️";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
